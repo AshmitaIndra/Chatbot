@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'chat1.dart';
+import 'buttonpage.dart';
 class Home1 extends StatelessWidget {
   const Home1({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       body: Center(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20.0),
@@ -33,14 +33,14 @@ class Home1 extends StatelessWidget {
               ),
               const SizedBox(height: 30),
               Image.asset(
-                'assets/robo.png', 
+                'assets/robo.png',
                 height: 200,
               ),
               const SizedBox(height: 30),
               ElevatedButton(
                 onPressed: () {
-                   Navigator.pushNamed(context, '/chatpg');
                   
+                  Navigator.pushNamed(context, '/buttonpage');
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.purple,
